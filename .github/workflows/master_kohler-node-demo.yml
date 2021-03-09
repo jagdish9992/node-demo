@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -31,5 +32,5 @@ jobs:
       with:
         app-name: 'kohler-node-demo'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bc403504bd1143f7ba9e33d43b7e79c8 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_933546e0868a4a21b3234ed59598a165 }}
         package: .
